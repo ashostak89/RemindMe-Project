@@ -1,8 +1,8 @@
 package com.example.ashostak89.remindme.fragments;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,14 +12,21 @@ import com.example.ashostak89.remindme.R;
 /**
  * Created by ashostak89 on 8/11/2016.
  */
-public class ExampleFragment extends Fragment {
+public class IdeasFragment extends AbstractTabFragment {
     private final static int LAYAOUT= R.layout.example_fragment;
-private View view;
 
-    public static ExampleFragment getInstance() {
+
+
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
+    public static IdeasFragment getInstance(Context context) {
 Bundle args=new Bundle();
-        ExampleFragment fragment=new ExampleFragment();
+        IdeasFragment fragment=new IdeasFragment();
         fragment.setArguments(args);
+        fragment.context=context;
+        fragment.setTitle(context.getString(R.string.tab_name_ideas));
         return fragment;
 
     }

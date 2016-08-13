@@ -7,9 +7,6 @@
         android:orderInCategory="1"
         android:icon="@mipmap/ic_message_text"
         />
-    <item
-        android:title="@string/search_title"
-        android:orderInCategory="1"
-        android:icon="@drawable/magnify"
-        />
+
+
 </menu>

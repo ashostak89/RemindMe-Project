@@ -4,4 +4,8 @@
     <string name="menu_item_notification">Notification</string>
     <string name="navigation_item_open">Open</string>
     <string name="navigation_item_close">Close</string>
+    <string name="tab_name_history">History</string>
+    <string name="tab_name_ideas">Ideas</string>
+    <string name="tab_name_todo">Todo</string>
+    <string name="tab_name_birthdays">Birthdays</string>
 </resources>
